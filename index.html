@@ -1,0 +1,379 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, viewport-fit=cover">
+    <title>Womenstruate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="bg-particles">
+        <div class="particle p1"></div>
+        <div class="particle p2"></div>
+        <div class="particle p3"></div>
+    </div>
+
+    <div class="app-container">
+        <!-- Header -->
+        <header class="glass-header">
+            <div class="header-content">
+                <div class="brand-container">
+                    <h1 class="brand-logo">Womenstruate<span class="brand-dot">.</span></h1>
+                    <span class="brand-tagline">We Menstruate.</span>
+                </div>
+                <div class="header-actions">
+                    <button class="icon-btn cart-btn">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                            stroke-width="2">
+                            <path d="M9 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            <path d="M20 20a1 1 0 1 0 0 2 1 1 0 0 0 0-2z" />
+                            <path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6" />
+                        </svg>
+                        <span class="cart-badge">0</span>
+                    </button>
+                    <button class="avatar-btn">
+                        <img src="https://ui-avatars.com/api/?name=Jane+Doe&background=7C6A8A&color=fff" alt="Profile">
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- Main Content Area -->
+        <main id="main-content">
+            <!-- Home Screen -->
+            <section id="home-screen" class="screen active">
+                <div class="hero-section">
+                    <h2>Your Cycle,<br>Reimagined.</h2>
+                    <p>Premium care for your intimate health.</p>
+                </div>
+
+                <div class="mood-selector-container">
+                    <h3>How are you feeling today?</h3>
+                    <div class="mood-pills">
+                        <button class="mood-pill active">🌸 Fresh</button>
+                        <button class="mood-pill">⚡ Energetic</button>
+                        <button class="mood-pill">🌊 Calm</button>
+                        <button class="mood-pill">😴 Tired</button>
+                        <button class="mood-pill">🌪️ Crampy</button>
+                    </div>
+                </div>
+
+                <div class="section-header">
+                    <h3>Our Collection</h3>
+                </div>
+
+                <!-- Product Carousel -->
+                <div class="carousel product-carousel">
+                    <!-- Products injected via JS -->
+                </div>
+
+                <div class="section-header">
+                    <h3>Care Essentials</h3>
+                </div>
+
+                <!-- Care Carousel -->
+                <div class="carousel care-carousel">
+                    <!-- Care products injected via JS -->
+                </div>
+
+                <div class="sustainability-section">
+                    <h3>Our Impact</h3>
+                    <div class="impact-counter">
+                        <span class="counter-label">Pads Saved</span>
+                        <span class="counter-value" id="eco-counter">0</span>
+                    </div>
+                    <div class="impact-stats">
+                        <div class="stat-card">
+                            <div class="stat-icon">🌱</div>
+                            <span class="stat-label">Eco-Friendly</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">⏳</div>
+                            <span class="stat-label">5 Years Use</span>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon">🌊</div>
+                            <span class="stat-label">Zero Waste</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="spacer"></div>
+            </section>
+
+            <!-- Learn Screen -->
+            <section id="learn-screen" class="screen">
+                <div class="screen-header">
+                    <h2>Learn & Guide</h2>
+                    <p class="subtitle">Everything you need to know.</p>
+                </div>
+
+                <div class="accordion-container">
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>What size is right?</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <img src="https://m.media-amazon.com/images/I/61xP8dFxDIL.jpg" alt="Size Guide"
+                                style="width:100%; border-radius:12px; margin-bottom:12px;">
+                            <p><strong>Small:</strong> For light flow or first-time users (under 18).</p>
+                            <p><strong>Medium:</strong> Standard fit for most users with regular flow.</p>
+                            <p><strong>Large:</strong> For heavy flow or those who have given birth.</p>
+                            <div class="guide-tip">Tip: Check your cervix height for the best fit.</div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>How to insert?</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <img src="https://cdn.shopify.com/s/files/1/0670/0905/2987/files/three-different-menstrual-cup-flding-techniques.jpg?v=1689765936"
+                                alt="Folding Techniques" style="width:100%; border-radius:12px; margin-bottom:12px;">
+                            <ol class="step-list">
+                                <li>Wash hands thoroughly.</li>
+                                <li>Fold cup (C-fold or Punch-down).</li>
+                                <li>Relax and insert gently.</li>
+                                <li>Rotate slightly to ensure a seal.</li>
+                                <li>Wear for up to 8-10 hours.</li>
+                            </ol>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Cleaning Guide</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="clean-list">
+                                <li><strong>Before Cycle:</strong> Boil for 5-7 minutes.</li>
+                                <li><strong>During Cycle:</strong> Rinse with water or Womenstruate Wash.</li>
+                                <li><strong>After Cycle:</strong> Sterilize and store in pouch.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>FAQs</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <div class="faq-block">
+                                <strong>Is it comfortable?</strong>
+                                <p>Yes! Once positioned correctly, you won't feel it.</p>
+                            </div>
+                            <div class="faq-block">
+                                <strong>Can I sleep with it?</strong>
+                                <p>Absolutely. It provides 12-hour protection.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Myth vs Facts</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <p><span class="myth">Myth:</span> It can get lost inside.</p>
+                            <p><span class="fact">Fact:</span> Impossible! Your cervix stops it from going anywhere.</p>
+                        </div>
+                    </div>
+
+                    <div class="accordion-item">
+                        <button class="accordion-header">
+                            <span>Sustainability</span>
+                            <span class="icon">+</span>
+                        </button>
+                        <div class="accordion-content">
+                            <ul class="eco-list">
+                                <li>1 Cup = 2000+ Pads prevented.</li>
+                                <li>Dramatically reduces landfill waste.</li>
+                                <li>Saves you money over 5 years.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="spacer"></div>
+            </section>
+
+            <!-- Profile Screen -->
+            <section id="profile-screen" class="screen">
+                <div class="screen-header">
+                    <h2>My Cycle</h2>
+                </div>
+
+                <div class="profile-dashboard">
+                    <div class="user-info-card">
+                        <img src="https://ui-avatars.com/api/?name=Jane+Doe&background=7C6A8A&color=fff&size=64"
+                            alt="Jane" class="large-avatar">
+                        <div class="user-details">
+                            <h3>Jane Doe</h3>
+                            <button class="edit-profile-btn">Edit Profile</button>
+                        </div>
+                    </div>
+
+                    <div class="calendar-widget">
+                        <div class="calendar-header">
+                            <span>October 2026</span>
+                            <div class="calendar-nav">
+                                <button>&lt;</button>
+                                <button>&gt;</button>
+                            </div>
+                        </div>
+                        <div class="calendar-grid">
+                            <!-- JS Generated Calendar -->
+                        </div>
+                        <div class="cycle-input">
+                            <label>Flow Intensity</label>
+                            <div class="flow-selector">
+                                <button class="flow-dot low" title="Low"></button>
+                                <button class="flow-dot medium active" title="Medium"></button>
+                                <button class="flow-dot heavy" title="Heavy"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="menu-list">
+                        <div class="menu-item" id="manage-addresses-btn">
+                            <span class="menu-icon">📍</span>
+                            <span>Address Book</span>
+                            <span class="menu-arrow">›</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-icon">📦</span>
+                            <span>Order History</span>
+                            <span class="menu-arrow">›</span>
+                        </div>
+                        <div class="menu-item">
+                            <span class="menu-icon">⚙️</span>
+                            <span>Settings</span>
+                            <span class="menu-arrow">›</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Address List Section (Inside Profile) -->
+                <div id="address-section" class="profile-dashboard" style="display:none; margin-top:20px;">
+                    <div class="section-header">
+                        <h3>My Addresses</h3>
+                        <button class="text-btn" id="add-new-address-btn">+ Add New</button>
+                    </div>
+                    <div id="address-list-container">
+                        <!-- Addresses injected via JS -->
+                    </div>
+                    <button class="btn-secondary" id="back-to-profile-btn" style="margin-top:20px; width:100%;">Back to
+                        Dashboard</button>
+                </div>
+                <div class="spacer"></div>
+            </section>
+
+            <!-- Cart Screen -->
+            <section id="cart-screen" class="screen">
+                <div class="screen-header">
+                    <h2>Your Bag</h2>
+                    <button class="close-cart-btn">Close</button>
+                </div>
+                <div class="cart-items-container">
+                    <!-- Cart items injected via JS -->
+                    <div class="empty-cart-message">Your bag is empty.</div>
+                </div>
+                <div class="cart-footer">
+                    <div class="cart-total">
+                        <span>Total</span>
+                        <span class="total-amount">₹0</span>
+                    </div>
+                    <button class="btn-primary checkout-btn">Checkout</button>
+                </div>
+            </section>
+        </main>
+
+        <!-- Bottom Navigation -->
+        <nav class="bottom-nav">
+            <button class="nav-item active" data-target="home-screen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                    <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                </svg>
+                <span>Home</span>
+            </button>
+            <button class="nav-item" data-target="learn-screen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <line x1="12" y1="16" x2="12" y2="12"></line>
+                    <line x1="12" y1="8" x2="12.01" y2="8"></line>
+                </svg>
+                <span>Learn</span>
+            </button>
+            <button class="nav-item" data-target="profile-screen">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="12" cy="7" r="4"></circle>
+                </svg>
+                <span>Profile</span>
+            </button>
+        </nav>
+    </div>
+    </div>
+
+    <!-- Modals -->
+    <!-- Edit Profile Modal -->
+    <div id="edit-profile-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3>Edit Profile</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="edit-profile-form">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="edit-user-name" required>
+                </div>
+                <div class="input-group">
+                    <label>Profile Image URL</label>
+                    <input type="url" id="edit-user-img">
+                </div>
+                <button type="submit" class="btn-primary">Save Changes</button>
+            </form>
+        </div>
+    </div>
+
+    <!-- Address Modal -->
+    <div id="address-modal" class="modal-overlay">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h3 id="address-modal-title">Add New Address</h3>
+                <button class="close-modal">&times;</button>
+            </div>
+            <form id="address-form">
+                <input type="hidden" id="address-id">
+                <div class="input-group">
+                    <label>Label (Home, Work, etc.)</label>
+                    <input type="text" id="address-label" required placeholder="e.g. Home">
+                </div>
+                <div class="input-group">
+                    <label>Full Address</label>
+                    <textarea id="address-text" required placeholder="Street, Apartment, City, PIN"></textarea>
+                </div>
+                <button type="submit" class="btn-primary" id="address-submit-btn">Save Address</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
